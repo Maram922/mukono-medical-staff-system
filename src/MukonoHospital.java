@@ -5,6 +5,7 @@ public class MukonoHospital {
               new Nurse("N001", "Paediatrics", 45),
               new Pharmacist("P001", "Pharmacy", 38),
               new LabTechnician("L001", "Laboratory", 42),
+              new Radiographer("R001", "Radiology", 36),
       };
 
       for (MedicalStaff s : staff){
