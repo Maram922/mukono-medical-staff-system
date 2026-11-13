@@ -1,4 +1,10 @@
-package PACKAGE_NAME;
+public class Pharmacist extends MedicalStaff{
+    public Pharmacist(String id, String dept, int hours) {
+        super(id, dept, hours);
+    }
 
-public class Pharmacist {
+    @Override
+    public void performPatientCare() {
+        System.out.println("Pharmacist dispenses drugs and advises patients");
+    }
 }

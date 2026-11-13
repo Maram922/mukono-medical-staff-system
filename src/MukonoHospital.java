@@ -1,13 +1,15 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-void main() {
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    IO.println(String.format("Hello and welcome!"));
+public class MukonoHospital {
+    public static void main(String[] args) {
+      MedicalStaff[] staff = {
+              new Doctor("D001", "Surgery", 40),
+              new Nurse("N001", "Paediatrics", 45),
+              new Pharmacist("P001", "Pharmacy", 38),
+              new LabTechnician("L001", "Laboratory", 42),
+      };
 
-    for (int i = 1; i <= 5; i++) {
-        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        IO.println("i = " + i);
+      for (MedicalStaff s : staff){
+          s.displayDetails();
+          s.performPatientCare();
+      }
     }
 }
